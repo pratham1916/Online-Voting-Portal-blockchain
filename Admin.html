@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Election Commission of INDIA</title>
+
+  <!-- Favicons -->
+  <link href="assets/img/Emblem.png" rel="icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  
+  <script>
+    $(document).ready(function() {
+      $("#hero").show();
+      $("#pricing").show();
+      $("#team").show();
+      $("#addcandiadate").hide();
+      $("#verifysection").hide();
+      $("#candidatelistSection").hide();	
+      $("#resultsection").hide();	
+      
+      $("#homeid").click(function() {
+        $("#hero").show();
+        $("#pricing").show();
+        $("#team").show();
+        $("#addcandiadate").hide();
+        $("#verifysection").hide();
+        $("#candidatelistSection").hide();	
+        $("#resultsection").hide();	
+      });
+      $("#candidateid").click(function() {
+        $("#hero").hide();
+        $("#pricing").hide();
+        $("#team").hide();
+        $("#addcandiadate").show();
+        $("#verifysection").hide();
+        $("#candidatelistSection").hide();	
+        $("#resultsection").hide();
+      });
+      $("#verifyid").click(function() {
+        $("#hero").hide();
+        $("#pricing").hide();
+        $("#team").hide();
+        $("#addcandiadate").hide();
+        $("#verifysection").show();
+        $("#candidatelistSection").hide();	
+        $("#resultsection").hide();
+      });
+      $("#Candidatelistid").click(function() {
+        $("#hero").hide();
+        $("#pricing").hide();
+        $("#team").hide();
+        $("#addcandiadate").hide();
+        $("#verifysection").hide();
+        $("#candidatelistSection").show();	
+        $("#resultsection").hide();
+      });
+      $("#resultid").click(function() {
+        $("#hero").hide();
+        $("#pricing").hide();
+        $("#team").hide();
+        $("#addcandiadate").hide();
+        $("#verifysection").hide();
+        $("#candidatelistSection").hide();	
+        $("#resultsection").show();
+      });
+    });
+  </script>
+</head>
+
+<body>
+  <!-- ----------------------------------------- Header -------------------------------------- -->
+  <header id="header" class="fixed-top d-flex align-items-center  header-transparent ">
+    <div class="container d-flex align-items-center justify-content-between">
+
+      <div class="logo">
+        <h1><a href="#">मतदान !</a></h1>
+      </div>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto active" href="#"><span id="homeid">Home</span></a></li> 
+          <li><a class="nav-link scrollto" href="#"><span id="candidateid">Add Candidate</span></a></li> 
+          <li><a class="nav-link scrollto" href="#"><span id ="verifyid">Verify Voters</span></a></li> 
+          <li><a class="nav-link scrollto" href="#"><span id="Candidatelistid">Candidate List</span></a></li> 
+          <li><a class="nav-link scrollto" href="#"><span id="resultid">Result</span></a></li>
+          <li><a class="nav-link scrollto" href="index.html">LOGOUT</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav>
+
+    </div>
+  </header>
+
+  <!-- ------------------------------ Home -------------------------------------------- -->
+
+  <section id="hero" class="d-flex flex-column justify-content-end align-items-center">
+    <div id="heroCarousel" data-bs-interval="5000" class="container carousel carousel-fade" data-bs-ride="carousel">
+
+      <!-- Slide 1 -->
+      <div class="carousel-item active">
+        <div class="carousel-container">
+          <h2 class="animate__animated animate__fadeInDown">Welcome to Voting Portal</h2>
+          <p class="animate__animated fanimate__adeInUp">Your voices are being heard and you are proving to our ancestors that their struggles were not in vain. Now we have one more thing we need to do to walk in our true power, and that is to vote.</p>
+        </div>
+      </div>
+
+    </div>
+
+    <svg class="hero-waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28 " preserveAspectRatio="none">
+      <defs>
+        <path id="wave-path" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z">
+      </defs>
+      <g class="wave1">
+        <use xlink:href="#wave-path" x="50" y="3" fill="rgba(255,255,255, .1)">
+      </g>
+      <g class="wave2">
+        <use xlink:href="#wave-path" x="50" y="0" fill="rgba(255,255,255, .2)">
+      </g>
+      <g class="wave3">
+        <use xlink:href="#wave-path" x="50" y="9" fill="#fff">
+      </g>
+    </svg>
+
+  </section>
+
+  <!-- --------------------------------- How to vote ---------------------------------------- -->
+  
+  <section id="pricing" class="pricing">
+    <div class="container">
+
+      <div class="section-title" data-aos="zoom-out">
+        <h2>How to Vote</h2>
+        <p>Follow these steps to vote :</p>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-3 col-md-6">
+          <div class="box featured" data-aos="zoom-in">
+            <h3>Step 1 :  Search your Constituency</h3>
+            <ul>
+              <li>1.  Search for Area </li>
+              <li>Nec feugiat nisl</li>
+              <li>Nulla at volutpat dola</li>	
+              <li class="na">Pharetra massa</li>
+              <li class="na">Massa ultricies mi</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 mt-4 mt-md-0">
+          <div class="box featured" data-aos="zoom-in" data-aos-delay="100">
+            <h3>Step 2 : Choose Prefered Party or Candidate</h3>
+            <!-- <h4><sup>$</sup>19<span> / month</span></h4> -->
+            <ul>
+              <li>Aida dere</li>
+              <li>Nec feugiat nisl</li>
+              <li>Nulla at volutpat dola</li>
+              <li>Pharetra massa</li>
+              <li class="na">Massa ultricies mi</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 mt-4 mt-lg-0">
+          <div class="box featured" data-aos="zoom-in" data-aos-delay="200">
+            <h3>Step 3 : Cast Your Vote there to Vote</h3>
+            <ul>
+              <li>Aida dere</li>
+              <li>Nec feugiat nisl</li>
+              <li>Nulla at volutpat dola</li>
+              <li>Pharetra massa</li>
+              <li>Massa ultricies mi</li>
+            </ul> 
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 mt-4 mt-lg-0">
+          <div class="box featured" data-aos="zoom-in" data-aos-delay="300">
+            <h3>Step 4 : Wait for Result's to be Declaire</h3>
+            <ul>
+              <li>Aida dere</li>
+              <li>Nec feugiat nisl</li>
+              <li>Nulla at volutpat dola</li>
+              <li>Pharetra massa</li>
+              <li>Massa ultricies mi</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- --------------------------- TEAM -------------------------------------- -->
+	
+	<section id="team" class="team">
+    <div class="container">
+
+      <div class="section-title" data-aos="zoom-out">
+        <h2>Team</h2>
+        <p>Our Hardworking Team</p>
+      </div>
+
+      <div class="row">
+
+        <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+          <div class="member" data-aos="fade-up">
+            <div class="member-img">
+              <img src="assets/img/Pratham.jpg">
+              <div class="social">
+                <a href=""><i class="fa-brands fa-github"></i></a>
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                <a href=""><i class="fa-brands fa-linkedin"></i></a>
+              </div>
+            </div>
+            <div class="member-info">
+              <h4>Pratham Nemade</h4>
+              <span>Chief Executive Officer</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+          <div class="member" data-aos="fade-up" data-aos-delay="100">
+            <div class="member-img">
+              <img src="assets/img/Pratham.jpg">
+              <div class="social">
+                <a href=""><i class="fa-brands fa-github"></i></a>
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                <a href=""><i class="fa-brands fa-linkedin"></i></a>
+              </div>
+            </div>
+            <div class="member-info">
+              <h4>Amit Pandey</h4>
+              <span>Product Manager</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+          <div class="member" data-aos="fade-up" data-aos-delay="200">
+            <div class="member-img">
+              <img src="assets/img/Pratham.jpg">
+              <div class="social">
+                <a href=""><i class="fa-brands fa-github"></i></a>
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                <a href=""><i class="fa-brands fa-linkedin"></i></a>
+              </div>
+            </div>
+            <div class="member-info">
+              <h4>Rohit Diwate</h4>
+              <span>CTO</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+          <div class="member" data-aos="fade-up" data-aos-delay="300">
+            <div class="member-img">
+              <img src="assets/img/Pratham.jpg">
+              <div class="social">
+                <a href=""><i class="fa-brands fa-github"></i></a>
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                <a href=""><i class="fa-brands fa-linkedin"></i></a>
+              </div>
+            </div>
+            <div class="member-info">
+              <h4>Hitesh Kadukar</h4>
+              <span>Accountant</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+          <div class="member" data-aos="fade-up" data-aos-delay="300">
+            <div class="member-img">
+              <img src="assets/img/">
+              <div class="social">
+                <a href=""><i class="fa-brands fa-github"></i></a>
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                <a href=""><i class="fa-brands fa-linkedin"></i></a>
+              </div>
+            </div>
+            <div class="member-info">
+              <h4>Atul Gupta</h4>
+              <span>Accountant</span>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ---------------------------- Add Candidate ---------------------------- -->
+
+	<section class="addcandiadate" id="addcandiadate">
+		<div class="container">
+			<div class="section-title" data-aos="zoom-out">
+				<h2>hhh</h2>
+				<p>Add Candidate</p>
+			</div>
+			<div class="row content" data-aos="fade-up">
+				<div class="col-lg-6">
+					<img src="assets/img/election.png">
+				</div>
+				
+				
+				<div class="col-lg-6 pt-4 pt-lg-0">
+					<form action="#" method="post" role="form" class="php-email-form">
+
+						<div class="row">
+							<div class="col-md-6 form-group">
+								<input type="text" name="fname" class="form-control" id="fname" placeholder="Your Full Name" autocomplete="off" required>
+							</div>
+							<div class="col-md-6 form-group mt-3 mt-md-0">
+								<input type="date" name="dob" class="form-control" id="dob" placeholder="Date of Birth" autocomplete="off" required>
+							</div>
+						</div>
+						
+						<div class="form-group mt-3">
+							<select class="form-control" name="Select">
+								<option value="Select" hidden>Select Your Cast </option>
+								<option value="SC/ST">SC/ST</option>
+								<option value="VJNT">VJNT</option>
+								<option value="General">General</option>
+								<option value="OBC">OBC</option>
+								<option value="SBC">SBC</option>
+								<option value="Other">Other</option>
+							</select>
+						</div>
+						<div class="row">
+							<div class="col-md-6 form-group mt-md-3">
+								<input type="text" name="voteid" class="form-control" id="voteid" placeholder="16 Digit Voter ID" maxlength="16" autocomplete="off" required>
+							</div>
+							<div class="col-md-6 form-group mt-3 mt-md-3">
+								<input type="text" name="adhar" class="form-control" id="adhar" placeholder="12 Digit Adhar Number" maxlength="12" autocomplete="off" required>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-6 form-group mt-md-3">
+								<input type="text" name="party" class="form-control" id="party" placeholder="Political Party" autocomplete="off" required>
+							</div>
+							<div class="col-md-6 form-group mt-3 mt-md-3">
+								<input type="text" name="position" class="form-control" id="position" placeholder="Position" autocomplete="off" required>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-6 form-group mt-md-3">
+								<h6>Profile Pic</h6>
+								<input type="file" name="img" class="form-control" id="img" placeholder="Upload Candidate Image" required>
+							</div>
+							<div class="col-md-6 form-group mt-3 mt-md-3">
+								<h6>Candidate Signature</h6>
+								<input type="file" name="sign" class="form-control" id="sign" placeholder="Upload Candidate Signature" required>
+							</div>
+						</div>
+						<div class="text-center">
+							<button type="submit">Send Message</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</section>
+
+  <section id="verifysection">
+    <div class="container">
+      <div class="section-title" data-aos="zoom-out">
+          <h2>Verify</h2>
+          <p>Verify Voter</p>
+      </div>
+  </div>
+  </section>
+
+  <section id="candidatelistSection">
+    <div class="container">
+      <div class="section-title" data-aos="zoom-out">
+          <h2>Candidate</h2>
+          <p>Candidaye List</p>
+      </div>
+  </div>
+  </section>
+
+  <section id="resultsection">
+    <div class="container">
+      <div class="section-title" data-aos="zoom-out">
+          <h2>Result</h2>
+          <p></p>
+      </div>
+  </div>
+  </section>
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="container">
+      <h3>मतदान !</h3>
+      <p>चाहे नर हो या हो नारी,मतदान है सबकी जिम्मेदारी।</p>
+      <div class="social-links">
+        <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+        <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+        <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
